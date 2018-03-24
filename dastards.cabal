@@ -18,7 +18,7 @@ library
   ghc-options:         -Wall
   exposed-modules:     Dastards.Types
   build-depends:       base >= 4.7 && < 5
-                     , containers 
+                     , containers
   default-language:    Haskell2010
 
 executable dastards-exe
@@ -35,6 +35,7 @@ test-suite dastards-test
   main-is:             Spec.hs
   build-depends:       base
                      , dastards
+                     , hspec
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
 
